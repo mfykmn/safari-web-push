@@ -22,6 +22,14 @@ macOS + SafariではVersionによってはFCMを利用できないためAPNsに�
     * `Website Push ID Certificate`を選択する
     * 上記で作成したIdentifierを選択
 
+
+### サーバー側
+1. iconsetの作成
+  ```shell
+  sh ./gen_icons.sh
+  ```
+2. 
 ## 参考リンク
 - [Safariプッシュ通知](https://developer.apple.com/notifications/safari-push-notifications/)
 - [ウェブサイトの通知について](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/NotificationProgrammingGuideForWebsites/Introduction/Introduction.html)
+- [RFC8030](https://datatracker.ietf.org/doc/html/rfc8030)
