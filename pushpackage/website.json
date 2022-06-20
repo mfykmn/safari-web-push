@@ -1,0 +1,8 @@
+{
+  "websiteName": "Test Safari Web Push",
+  "websitePushID": "web.com.example.domain",
+  "allowedDomains": ["http://domain.example.com"],
+  "urlFormatString": "http://domain.example.com/%@/?flight=%@",
+  "authenticationToken": "",
+  "webServiceURL": "https://example.com/push"
+}
