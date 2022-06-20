@@ -28,8 +28,21 @@ macOS + SafariではVersionによってはFCMを利用できないためAPNsに�
   ```shell
   sh ./gen_icons.sh
   ```
-2. 
+2. website.jsonの更新
+3. manifest.jsonの更新
+  ハッシュ値を生成して埋め込む
+  ```shell
+  shasum -a 512 pushpackage/icon.iconset/icon_16x16.png
+  ```
+4. 証明書
+  ```shell
+  openssl x509 -in cert.cer -inform DER -outform PEM -out cert.pem
+  openssl pkcs12 -in key.p12 -out key.pem -nodes
+  ```
+
 ## 参考リンク
 - [Safariプッシュ通知](https://developer.apple.com/notifications/safari-push-notifications/)
 - [ウェブサイトの通知について](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/NotificationProgrammingGuideForWebsites/Introduction/Introduction.html)
 - [RFC8030](https://datatracker.ietf.org/doc/html/rfc8030)
+- [createPushPackage.php](https://github.com/connorlacombe/Safari-Push-Notifications/blob/master/createPushPackage.php)
+  - 今はバグでうまく動かないらしい
