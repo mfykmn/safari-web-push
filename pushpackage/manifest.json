@@ -1,0 +1,30 @@
+{
+  "website.json": {
+    "hashType": "sha512",
+    "hashValue": ""
+  },
+  "icon.iconset/icon_16x16.png": {
+    "hashType": "sha512",
+    "hashValue": ""
+  },
+  "icon.iconset/icon_16x16@2x.png": {
+    "hashType": "sha512",
+    "hashValue": ""
+  },
+  "icon.iconset/icon_32x32.png": {
+    "hashType": "sha512",
+    "hashValue": ""
+  },
+  "icon.iconset/icon_32x32@2x.png": {
+    "hashType": "sha512",
+    "hashValue": ""
+  },
+  "icon.iconset/icon_128x128.png": {
+    "hashType": "sha512",
+    "hashValue": ""
+  },
+  "icon.iconset/icon_128x128@2x.png": {
+    "hashType": "sha512",
+    "hashValue": ""
+  }
+}
