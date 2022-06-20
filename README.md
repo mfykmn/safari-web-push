@@ -30,11 +30,11 @@ macOS + SafariではVersionによってはFCMを利用できないためAPNsに�
   ```
 2. website.jsonの更新
 3. manifest.jsonの更新
-  ハッシュ値を生成して埋め込む
+  manifest.jsonとsignatureを覗いたファイルすべてのハッシュ値を生成して埋め込む必要がある
   ```shell
   shasum -a 512 pushpackage/icon.iconset/icon_16x16.png
   ```
-4. 証明書
+4. signature
   ```shell
   openssl x509 -in cert.cer -inform DER -outform PEM -out cert.pem
   openssl pkcs12 -in key.p12 -out key.pem -nodes
